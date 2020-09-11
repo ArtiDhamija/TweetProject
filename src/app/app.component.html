@@ -1,0 +1,32 @@
+<!-- NG-ZORRO -->
+<form #form="ngForm">
+  <div class="col-lg-6">
+<h4>Add Tweet Here :- </h4>
+<input class="form-control"  [(ngModel)]="tweet.value" name="tweet" />
+<input type="datetime-local" [(ngModel)]="tweet.date" name="DatePicker">
+<button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+
+</div>
+
+
+<body> 
+  <h1> Tweets added:- </h1> 
+  <table border=2> 
+      <thead> 
+          <tr> 
+              <th>Tweet</th> 
+              <th>Date and Time</th> 
+          </tr> 
+      </thead> 
+      <tbody id= "tablegrid"> 
+        
+          </tbody>
+  </table> 
+
+</body> 
+</form>
+
+
+
+
+
